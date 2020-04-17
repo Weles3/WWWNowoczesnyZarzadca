@@ -53,3 +53,18 @@ body {
     color: black;
 }
 
+@mixin toc-ul {
+    list-style-type: none;
+};
+
+#toc { 
+    @include toc-ul;
+    padding-left: 0px;
+}
+
+#toc {
+    ul { 
+        @include toc-ul ;
+        padding-left: 10px;
+    }
+}

@@ -9,13 +9,23 @@ subTitle: Wizja postępu dzięki technologii i lepszej organizacji pracy
     <div class="row">
         <div class="col-12 col-md-8 p-0">
             <div class="bg-white rounded p-2 mb-2 mx-md-2">
-                <div class="wls-quote mx-5 text-justify">
+                <div class="wls-quote text-center">
                     Spotkałem wielu zarządców nieruchomości. Z wieloma współpracuję przez bardzo długi okres.
                     Na tym portalu pragnę podzielić się moimi doświadczeniami, co sprawiało, że niektórzy
                     zarządcy szybko rosną, inni stoją w miejscu a jeszcze inni powoli zmierzają do
                     końca swojej działalności.
                 </div>
+            </div>
+            <div class="bg-white rounded p-2 mx-md-2 mb-2">
+                <h6>
+                    <i class="fas fa-stream mr-2"></i>Ostatnie posty
+                </h6>
                 <hr>
+                {% for post in site.posts limit: 5 %}
+                <div class="p-0 mt-2">
+                    {% include postcard.html post=post wid=200 hei=120 %}
+                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="col-12 col-md-4 p-0">
@@ -30,17 +40,6 @@ subTitle: Wizja postępu dzięki technologii i lepszej organizacji pracy
                     Od ponad 20 lat zajmuję się tworzeniem systemów
                     dla zarządców nieruchomości Weles.
                 </p>
-            </div>
-            <div class="bg-white rounded p-2">
-                <h4>Najnowsze posty</h4>
-                <hr>
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
             </div>
         </div>
     </div>
