@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-12 col-md-4 p-0">
+            <div class="bg-white rounded p-2 mb-2">
+                <a href="/" class="btn btn-block btn-primary">Strona główna</a>
+                {% include toc.html html=content %}
+            </div>
+        </div>
+        <div class="col-12 col-md-8 p-0">
+
+            <div class="bg-white rounded p-2 mx-md-2">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
