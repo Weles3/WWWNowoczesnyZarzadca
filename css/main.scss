@@ -1,0 +1,40 @@
+---
+---
+
+@import "defs";
+
+.foo {
+    color: red;
+}
+
+.wls-bg {
+    background-image: url({{ "/img/tlo-light.png" | relative_url }});
+}
+
+.wls-ico-lg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.wls-ico-2x {
+    width: 2rem;
+    height: 2rem;
+}
+
+.wls-ico-5x {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.wls-head {
+    background-color: $wls-color-a;
+
+    h2 {
+        color: white;
+    }
+    
+    h6 {
+        font-style: italic;
+    }
+}

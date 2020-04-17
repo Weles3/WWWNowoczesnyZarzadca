@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ "/css/bootstrap.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+
+    <title>{{ page.title }}</title>
+</head>
+
+<body class="wls-bg">
+
+    <div class="container-fluid wls-head p-4 mb-2">
+        <div class="row text-center text-md-left">
+            <div class="col-12 col-md-auto ">
+                <img class="wls-ico-5x" src="{{ "/img/logo.png" | relative_url }}">
+            </div>
+            <div class="col-12 col-md">
+                <h2>{{ page.title }}</h2>
+                {% unless page.subTitle == nil or page.subTitle == blank %}
+                    <h6>{{ page.subTitle }}</h6>
+                {% endunless %}        
+        
+            </div>
+        </div>
+        
+    </div>    
+
+    {{ content }}
+
+    <script src="{{ "/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/js/bootstrap.js" | relative_url }}"></script>
+    <script src="https://kit.fontawesome.com/59c136fc78.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
