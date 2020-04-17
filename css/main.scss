@@ -3,6 +3,10 @@
 
 @import "defs";
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .foo {
     color: red;
 }
@@ -26,6 +30,10 @@
     height: 5rem;
 }
 
+.wls-quote {
+    font-style: italic;
+    font-family: 'Roboto', serif;
+}
 
 .wls-head {
     background-color: $wls-color-a;
