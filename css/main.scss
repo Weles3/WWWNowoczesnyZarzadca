@@ -3,8 +3,14 @@
 
 @import "defs";
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100%;
 }
 
 a {
@@ -12,7 +18,7 @@ a {
 }
 
 .wls-bg {
-    background-image: url({{ "/img/tlo-light.png" | relative_url }});
+    background-color: white;
 }
 
 .wls-ico-lg {
@@ -35,20 +41,41 @@ a {
     font-family: 'Roboto', serif;
 }
 
-.wls-bg-a {
-    background-color: $wls-color-a;
-}
 .wls-head {
-    background-image: linear-gradient(to bottom right, $wls-color, transparent);
 
-    h2 {
-        color: white;
+    > div {
+        background-image: linear-gradient(to bottom, $wls-color, transparent);
     }
-    
+
     h6 {
         font-style: italic;
+        color: black;
     }
 }
+
+.wls-foot {
+
+}
+
+.wls-card {
+    min-height: 160px;
+}
+.wls-card-img {
+    width: 200px;
+}
+.wls-bl {
+    border-left: 2px solid $wls-color
+}
+.wls-bb {
+    border-bottom: 2px solid $wls-color
+}
+.wls-br {
+    border-right: 2px solid $wls-color
+}
+.wls-bt {
+    border-top: 2px solid $wls-color
+}
+
 
 .btn-primary {
     background-color: rgb(215, 172, 104);

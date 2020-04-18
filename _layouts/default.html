@@ -13,23 +13,31 @@
 
 <body class="wls-bg">
 
-    <div class="container-fluid wls-head p-4 mb-2">
-        <div class="row text-center text-md-left">
+    <div class="container-fluid wls-head mb-2 p-0">
+        <div class="row text-center text-md-left p-4">
             <div class="col-12 col-md-auto ">
                 <img class="wls-ico-5x" src="{{ "/img/logo.png" | relative_url }}">
             </div>
             <div class="col-12 col-md">
                 <h2>{{ page.title }}</h2>
                 {% unless page.subTitle == nil or page.subTitle == blank %}
-                    <h6>{{ page.subTitle }}</h6>
-                {% endunless %}        
-        
+                <h6>{{ page.subTitle }}</h6>
+                {% endunless %}
+
             </div>
         </div>
-        
-    </div>    
+
+    </div>
 
     {{ content }}
+
+    <div class="container-fluid wls-foot p-4 mb-2">
+        <div class="row text-center text-md-left">
+            <div class="col-12 col-md-auto ">
+                Stopka
+            </div>
+        </div>
+    </div>
 
     <script src="{{ "/js/jquery.js" | relative_url }}"></script>
     <script src="{{ "/js/bootstrap.js" | relative_url }}"></script>
