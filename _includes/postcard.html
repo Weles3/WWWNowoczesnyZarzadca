@@ -1,7 +1,19 @@
-<div class="bg-white shadow clearfix rounded overflow-hidden wls-bt wls-bb wls-bl wls-br p-2 wls-card">
-    <a href="{{ include.post.url }}">
-        <img class="mr-2 float-left wls-card-img" src={{ include.post.image | relative_url }}>
-        <span class="h6">{{ include.post.title }}</span>
-    </a>
-    <div>{{ include.post.subTitle }}</div>
+<div class="clearfix p-2 bg-white">
+    <div class="d-none d-sm-block wls-card ">
+        <a href="{{ include.post.url }}">
+            <img class="mr-2 float-left wls-card-img" src={{ include.post.image | relative_url }}>
+            <span class="h4">{{ include.post.title }}</span>
+        </a>
+        <div class="wls-quote">{{ include.post.subTitle }}</div>
+    </div>
+    <div class="d-block d-sm-none text-center ">
+        <a href="{{ include.post.url }}">
+            <div>
+                <img class="mr-2 wls-card-img" src={{ include.post.image | relative_url }}>
+            </div>
+            
+            <span class="h4">{{ include.post.title }}</span>
+        </a>
+        <div class="wls-quote">{{ include.post.subTitle }}</div>
+    </div>
 </div>

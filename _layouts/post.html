@@ -6,26 +6,26 @@ layout: default
     <div class="row">
 
         <div class="d-none d-md-block col-md-auto p-0">
-            <div class="bg-white rounded p-2 mb-2">
+            <div class="bg-white p-2 mb-2">
                 {% include postnav.html %}
             </div>
 
-            <div class="bg-white rounded p-2 mb-2">
-                <h6>
+            <div class="bg-white p-2 mb-2">
+                <div class="mb-1">Opublikowano {{ page.date | date: "%Y-%m-%d" }}</div>
+                <div class="">
                     <i class="fas fa-list mr-2"></i>Spis treści
-                </h6>
-                <hr>
+                </div>
                 {% include toc.html html=content id="toc" item_class="wls-toc" %}
             </div>
         </div>
         <div class="col-12 col-md p-0">
-            <div class="bg-white rounded p-2 mx-md-2">
+            <div class="bg-white p-2 mx-md-2 wls-bt-r">
                 {{ content }}
             </div>
         </div>
 
         <div class="col-12 d-md-none p-0">
-            <div class="bg-white rounded p-2 mt-2">
+            <div class="bg-white p-2 mt-2">
                 {% include postnav.html %}
             </div>
         </div>

@@ -8,17 +8,21 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $wls-sans;
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
-a {
-    color: $wls-color;
-}
+a
+{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: $wls-color-orange;
 
+}
 .wls-bg {
-    background-color: white;
+    background-color: rgb(244, 244, 244);
 }
 
 .wls-ico-lg {
@@ -36,15 +40,19 @@ a {
     height: 5rem;
 }
 
+.wls-img-foot {
+    height: 2rem;
+}
+
 .wls-quote {
     font-style: italic;
-    font-family: 'Roboto', serif;
+    font-family: $wls-serif;
 }
 
 .wls-head {
 
     > div {
-        background-image: linear-gradient(to bottom, $wls-color, transparent);
+        background-image: linear-gradient(to bottom, $wls-color-orange, transparent);
     }
 
     h6 {
@@ -54,7 +62,7 @@ a {
 }
 
 .wls-foot {
-
+    background-color: $wls-color-orange;
 }
 
 .wls-card {
@@ -63,19 +71,37 @@ a {
 .wls-card-img {
     width: 200px;
 }
-.wls-bl {
-    border-left: 2px solid $wls-color
+
+.wls-bl-r {
+    border-left: 2px solid $wls-color-red
 }
-.wls-bb {
-    border-bottom: 2px solid $wls-color
+.wls-bb-r {
+    border-bottom: 2px solid $wls-color-red
 }
-.wls-br {
-    border-right: 2px solid $wls-color
+.wls-br-r {
+    border-right: 2px solid $wls-color-red
 }
-.wls-bt {
-    border-top: 2px solid $wls-color
+.wls-bt-r {
+    border-top: 2px solid $wls-color-red
 }
 
+.wls-bl-o {
+    border-left: 1px solid $wls-color-orange
+}
+.wls-bb-o {
+    border-bottom: 1px solid $wls-color-orange
+}
+.wls-br-o {
+    border-right: 1px solid $wls-color-orange
+}
+.wls-bt-o {
+    border-top: 1px solid $wls-color-orange
+}
+
+.wls-title {
+    text-decoration: underline;
+    text-decoration-color: $wls-color-red;
+}
 
 .btn-primary {
     background-color: rgb(215, 172, 104);

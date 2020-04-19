@@ -19,7 +19,7 @@
                 <img class="wls-ico-5x" src="{{ "/img/logo.png" | relative_url }}">
             </div>
             <div class="col-12 col-md">
-                <h2>{{ page.title }}</h2>
+                <h2 class="wls-title">{{ page.title }}</h2>
                 {% unless page.subTitle == nil or page.subTitle == blank %}
                 <h6>{{ page.subTitle }}</h6>
                 {% endunless %}
@@ -31,10 +31,17 @@
 
     {{ content }}
 
-    <div class="container-fluid wls-foot p-4 mb-2">
-        <div class="row text-center text-md-left">
-            <div class="col-12 col-md-auto ">
-                Stopka
+    <div class="container-fluid wls-foot wls-bt-r p-0">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="p-2">
+                    <a href="https://www.e-adm.pl" ta><img class="wls-img-foot" src={{ "/img/w3.png" | relative_url }} /></a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="p-2">
+                    <a href="https://znajdzzarzadce.pl"><img class="wls-img-foot" src={{ "/img/zz.png" | relative_url }} /></a>
+                </div>
             </div>
         </div>
     </div>
