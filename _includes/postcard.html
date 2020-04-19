@@ -5,6 +5,8 @@
             <span class="h4">{{ include.post.title }}</span>
         </a>
         <div class="wls-quote wls-subtitle">{{ include.post.subTitle }}</div>
+        <div class="wls-subtitle small">Opublikowano {{ include.post.date | date: "%Y-%m-%d" }}.</div>
+        <div class="wls-subtitle small">Przeczytasz w ok. {{ include.post.readTime }} min.</div>
     </div>
     <div class="d-block d-sm-none text-center ">
         <a href="{{ include.post.url }}">
@@ -15,5 +17,7 @@
             <span class="h4">{{ include.post.title }}</span>
         </a>
         <div class="wls-quote wls-subtitle">{{ include.post.subTitle }}</div>
+        <div class="wls-subtitle small">Opublikowano {{ include.post.date | date: "%Y-%m-%d" }}.</div>
+        <div class="wls-subtitle small">Przeczytasz w ok. {{ include.post.readTime }} min.</div>
     </div>
 </div>
