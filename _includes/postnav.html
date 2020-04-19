@@ -1,9 +1,9 @@
-<a href="/" class="btn btn-block btn-primary"><i class="fas fa-angle-double-up mr-2"></i>Strona główna</a>
+<a href="/" class="btn btn-block btn-primary">&uarr; Strona główna</a>
 
 {% if page.previous %}
-<a href="{{ page.previous.url }}" class="btn btn-block btn-primary"><i class="fas fa-angle-double-left mr-2"></i>Poprzedni</a>                    
+<a href="{{ page.previous.url }}" class="btn btn-block btn-primary">&larr; Poprzedni</a>                    
 {% endif %}
 
 {% if page.next %}
-<a href="{{ page.next.url }}" class="btn btn-block btn-primary"><i class="fas fa-angle-double-right mr-2"></i>Następny</a>                    
+<a href="{{ page.next.url }}" class="btn btn-block btn-primary">&rarr; Następny</a>                    
 {% endif %}
