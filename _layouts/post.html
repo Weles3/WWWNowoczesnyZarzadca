@@ -11,10 +11,7 @@ layout: default
             </div>
 
             <div class="bg-white p-2 mb-2">
-                <div class="mb-1">Opublikowano {{ page.date | date: "%Y-%m-%d" }}</div>
-                <div class="">
-                    <i class="fas fa-list mr-2"></i>Spis treści
-                </div>
+                <div class="mb-1 wls-subtitle small text-center">Opublikowano {{ page.date | date: "%Y-%m-%d" }}</div>
                 {% include toc.html html=content id="toc" item_class="wls-toc" %}
             </div>
         </div>
