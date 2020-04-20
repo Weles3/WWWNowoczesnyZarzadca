@@ -1,2 +1,14 @@
-name: Test
+name: Nowoczesny Zarządca Nieruchomości
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: Michał Ziemski
+      lang: pl
+

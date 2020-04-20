@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dostęp on-line dla właścicieli
-subTitle: Poprawia komunikację i odciąża zarządcę
+description: Poprawia komunikację i odciąża zarządcę
 image: stock/biurko.jpg
 readTime: 10
 ---

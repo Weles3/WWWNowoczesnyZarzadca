@@ -4,11 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com" >
 
     <link rel="stylesheet" href="{{ "/css/bootstrap.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
 
     <title>{{ page.title }}</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163980880-1"></script>
+    <script src="{{ "/js/analytics.js" | relative_url }}"></script>
+    <script src="{{ "/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/js/bootstrap.js" | relative_url }}"></script>
+
+    {% seo %}
 </head>
 
 <body class="wls-bg">
@@ -20,8 +28,8 @@
             </div>
             <div class="col-12 col-md">
                 <h2 class="wls-title">{{ page.title }}</h2>
-                {% unless page.subTitle == nil or page.subTitle == blank %}
-                <h6 class="wls-subtitle wls-quote">{{ page.subTitle }}</h6>
+                {% unless page.descritpion == nil or page.descritpion == blank %}
+                <h6 class="wls-subtitle wls-quote">{{ page.descritpion }}</h6>
                 {% endunless %}
 
             </div>
@@ -35,24 +43,25 @@
         <div class="row justify-content-center">
             <div class="col-auto">
                 <div class="p-2">
-                    <a href="https://www.e-adm.pl" target="_blank"><img class="wls-img-foot" src={{ "/img/w3.png" | relative_url }} /></a>
+                    <a href="https://www.e-adm.pl" target="_blank"><img class="wls-img-foot"
+                            src={{ "/img/w3.png" | relative_url }} /></a>
                 </div>
             </div>
             <div class="col-auto">
                 <div class="p-2">
-                    <a href="https://znajdzzarzadce.pl" target="_blank"><img class="wls-img-foot" src={{ "/img/zz.png" | relative_url }} /></a>
+                    <a href="https://znajdzzarzadce.pl" target="_blank"><img class="wls-img-foot"
+                            src={{ "/img/zz.png" | relative_url }} /></a>
                 </div>
             </div>
             <div class="col-auto">
                 <div class="p-2">
-                    <a href="https://fb.com/weles3" target="_blank"><img class="wls-img-foot" src={{ "/img/fb.png" | relative_url }} /></a>
+                    <a href="https://fb.com/weles3" target="_blank"><img class="wls-img-foot"
+                            src={{ "/img/fb.png" | relative_url }} /></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="{{ "/js/jquery.js" | relative_url }}"></script>
-    <script src="{{ "/js/bootstrap.js" | relative_url }}"></script>
 </body>
 
 </html>
