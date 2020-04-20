@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Promowanie dostępu on-line dla właścicieli
-subTitle: Polepsza komunikację i odciąża księgowe od odbierania telefonów.
+title: Dostęp on-line dla właścicieli
+subTitle: Poprawia komunikację i odciąża zarządcę
 image: stock/biurko.jpg
 readTime: 10
 ---
@@ -61,9 +61,45 @@ Powyższe wystarczy aby wyprzedzać konkurencję, ale nie jest to jeszcze stan, 
 Problemem nadal jest fakt, że to właściciel musi pamiętać, że potrzebuje zalogować się do systemu i to właśnie planujemy zmienić.
 ``
 
- - Wprowadziliśmy obecnie możliwość realizacji płatności przez podgląd on-line, co da właścicielom motywację do bieżących wizyt
-i utrwalenia tej formy komunikacji.
- - Wprowadziliśmy możliwość zalogowania się do płatności bez konieczności pamiętania danych autoryzacyjnych (użytkownik/hasło)
- - Wprowadzimy nową stronę do logowania dla właścicieli - osobną niż dla administratorów
- - Wprowadzimy automatyczne przypominanie o konieczności logowania przez wiadaomości PUSH (powiadomienia)
- - Będziemy oferować dodatkowe usługi za pomocą podglądu on-line
+
+Naszym celem jest przeniesienie koniecnzości pamiętana z właściciela na system. W ten sposób oraz planujemy osiągnąć
+cykliczność logowania i faktyczne używanie naszego podglądu on-line.
+
+# Co trzeba zrobić?
+
+Motorem promowania dostępu on-line będzie zawsze zarządca. Jest to działanie w
+obopulnym interesie zarządcy i właścicieli. Dobre praktyki, które zwiększają zainteresowanie
+właścicieli to:
+ - __włączenie płatności przez podgląd on-line__
+ - informowanie o danych logowania na zaliczkach
+ - informacje mailowe z informacjami o możliwości logowania
+ - informacje wywieszone na tablicy ogłoszeń w nieruchomości
+ - informacja w rozmowach z właścicielami
+ - __informacja o możliwości logowania on-line przy odpowiedziach na maile/telefony__
+ - wprowadzanie w systemie adresów mailowych właścicieli - pozwoli to na wysyłkę 
+informacji oraz ewentualne odzyskiwanie hasła przez właściciela
+
+## Jak będziemy jeszcze pomagać
+
+Z naszej strony planujemy kolejne rozwiązania, które będą miały na celu pomóc
+zarządcom dotrzeć z podglądem on-line dla właścicieli:
+ - wprowadziliśmy obecnie możliwość realizacji płatności przez podgląd on-line, co da właścicielom motywację do bieżących wizyt
+i utrwalenia tej formy komunikacji
+ - wprowadziliśmy możliwość zalogowania się do płatności bez konieczności pamiętania danych autoryzacyjnych (użytkownik/hasło)
+ - wprowadzimy nową stronę do logowania dla właścicieli - osobną niż dla administratorów
+ - wprowadzimy automatyczne przypominanie o konieczności logowania przez wiadaomości PUSH (powiadomienia)
+ - będziemy oferować dodatkowe usługi za pomocą podglądu on-line
+ - projektujemy przyjazną instruckję do podglądu 
+ - dodamy bezpośrednio w systemie narzędzie do analizy częstotliwości logowań
+wraz z narzędziami do nadawania dostępów i informowania o nich
+
+# Nasza wizja
+
+Wierzymy, że współnym działaniem możemy sprawić, że znaczna część właścicieli będzie korzystała
+z podglądu on-line jako głównego kanału pozyskiwania informacji o nieruchomości. Pozwoli to
+zaoszczędzić czas pracy zarządcy oraz poprawi komfort właścicieli. Dzięki możliwości płatności
+w podglądzie on-line poprawi to też terminowość regulowania zaległości.
+
+``
+Korzyści jest na prawdę bardzo wiele. Wystarczy po nie sięgnąć.
+``
