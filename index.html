@@ -9,11 +9,11 @@ image: /img/w3.png
 
     <div class="row">
         <div class="col-12 col-md-9 p-0 wls-bt-r">
-            <div class="p-2 mx-md-2 mb-2">
+            <div class="p-0 mb-2">
                 <div class="container">
                     <div class="row">
                         {% for post in site.posts limit: 5 %}
-                        <div class="p-1 col-12">
+                        <div class="p-0 pr-md-2 col-12 mt-2">
                             {% include postcard.html post=post %}
                         </div>
                         {% endfor %}
