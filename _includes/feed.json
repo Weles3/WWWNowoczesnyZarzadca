@@ -1,0 +1,17 @@
+[
+    {%- assign start=true -%}
+    {%- for post in include.list -%}
+        {%- if start -%}
+            {%- assign start=false -%}
+            {%- else -%},
+        {%- endif -%}
+        {
+            "name": "{{ post.title | escape}}",
+            "date": "{{ post.date | date: "%Y-%m-%d" }}",
+            "image": "{{ post.image }}",
+            "url": "{{ post.url  }}",
+            "desc": "{{ post.description | escape }}",
+            "readTime": {{ post.readTime }}
+        }
+    {%- endfor -%}
+]

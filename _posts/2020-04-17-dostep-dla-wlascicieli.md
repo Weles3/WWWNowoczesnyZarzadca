@@ -2,7 +2,8 @@
 layout: post
 title: Dostęp on-line dla właścicieli
 description: Poprawia komunikację i odciąża zarządcę
-image: stock/biurko.jpg
+image: /stock/biurko.jpg
+tags: [w3]
 readTime: 10
 ---
 # Dlaczego dostęp on-line?
