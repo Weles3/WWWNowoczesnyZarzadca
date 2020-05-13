@@ -4,65 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com; object-src 'none'" >
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; img-src 'self' data: https://www.google-analytics.com; object-src 'none'">
 
-    <link rel="stylesheet" href="{{ "/css/bootstrap.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <title>{{ page.title }}</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163980880-1"></script>
-    <script src="{{ "/js/analytics.js" | relative_url }}"></script>
-    <script src="{{ "/js/jquery.js" | relative_url }}"></script>
-    <script src="{{ "/js/bootstrap.js" | relative_url }}"></script>
+    <script src="/js/analytics.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
     {% seo %}
 </head>
 
-<body class="wls-bg">
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white mb-2" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="{{ site.data.icons.nz }}" class="nz-logo-lg">
+        </a>
 
-    <div class="container-fluid wls-head mb-2 p-0">
-        <div class="row text-center text-md-left p-4">
-            <div class="col-12 col-md-auto ">
-                <img class="wls-ico-5x" src="{{ "/img/logo.png" | relative_url }}">
-            </div>
-            <div class="col-12 col-md">
-                <h2 class="wls-title">{{ page.title }}</h2>
-                {% unless page.descritpion == nil or page.descritpion == blank %}
-                <h6 class="wls-subtitle wls-quote">{{ page.descritpion }}</h6>
-                {% endunless %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <span class="navbar-nav ml-auto">
+                {% for n in site.data.nav %}
+                <a {% if n.extern %}target="_blank" {% endif %}class="nav-link" href="{{ n.href }}">{{ n.text }}</a>
+                {% endfor %}
+            </span>
         </div>
-
-    </div>
+    </nav>
 
     {{ content }}
 
-    <div class="container-fluid wls-foot wls-bt-r p-0">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <div class="p-2">
-                    <a href="https://www.e-adm.pl" target="_blank"><img class="wls-img-foot"
-                            src={{ "/img/w3.png" | relative_url }} /></a>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="p-2">
-                    <a href="https://znajdzzarzadce.pl" target="_blank"><img class="wls-img-foot"
-                            src={{ "/img/zz.png" | relative_url }} /></a>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="p-2">
-                    <a href="https://fb.com/weles3" target="_blank"><img class="wls-img-foot"
-                            src={{ "/img/fb.png" | relative_url }} /></a>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="p-2">
-                    <a href="{{ "feed.xml" | relative_url }}" target="_blank"><img class="wls-img-foot"
-                            src={{ "/img/atom.png" | relative_url }} /></a>
+    <div id="footer" class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="nz-foot-img">
+                    <a target="_blank" href="https://www.e-adm.pl"><img src="{{ site.data.icons.w3ntm }}" class="nz-logo-lg"></a>
+                    <a target="_blank" href="https://tomojdom.pl"><img src="{{ site.data.icons.tmdntm }}" class="nz-logo-lg"></a>
+                    <a target="_blank" href="https://ksiegi.e-adm.pl"><img src="{{ site.data.icons.wkntm }}" class="nz-logo-lg"></a>
+                    <a target="_blank" href="https://znajdzzarzadce.pl"><img src="{{ site.data.icons.zzntm }}" class="nz-logo-lg"></a>
+                    <a target="_blank" href="https://nowoczesnyzarzadca.pl"><img src="{{ site.data.icons.nzntm }}" class="nz-logo-lg"></a>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 layout: post
 title: Dostęp on-line dla właścicieli
 description: Poprawia komunikację i odciąża zarządcę
-image: /stock/biurko.jpg
+icon: /svg/w3nt.svg
 tags: [w3]
 readTime: 10
 ---

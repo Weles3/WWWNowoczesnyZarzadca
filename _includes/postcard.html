@@ -1,22 +1,12 @@
-<div class="card">
-    <div class="row no-gutters align-items-center">
-        <div class="col-12 col-md-4">
-            <img class="card-img" src={{ include.post.image | relative_url }}>
+<div class="nz-post mb-2"]}>
+    <div class="nz-header">
+        <div cl="nz-post-logo">
+            <img src="{{ include.post.icon }}" class="nz-logo-lg" />
         </div>
-        <div class="col-12 col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">{{ include.post.title }}</h5>
-                <p class="card-text">{{ include.post.description }}</p>
-                <a class="btn btn-primary" href="{{ include.post.url }}">Czytaj</a>
-            </div>
+        <div class="nz-title">
+            <div class="nz-title-text"><a href="{{ include.post.url }}">{{ include.post.title }}</a></div>
+            <div class="nz-title-extra">{{ include.post.date | date: "%Y-%m-%d" }} ~{{ include.post.readTime }}min</div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="card-footer">
-                <small class="text-muted">Opublikowano {{ include.post.date | date: "%Y-%m-%d" }}, przeczytasz w ok.
-                    {{ include.post.readTime }} min.</small>
-            </div>
-        </div>
-    </div>
+    <div class="nz-body">{{ include.post.description }}</div>
 </div>

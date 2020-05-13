@@ -2,7 +2,7 @@
 layout: post
 title: Prezentujemy stronę ToMojDom.pl
 description: Właściciele lokali mogą zalogować się już przez dedykowaną dla nich stronę Weles3
-image: /stock/biurko.jpg
+icon: /svg/tmdnt.svg
 tags: [tmd, w3]
 readTime: 2
 ---

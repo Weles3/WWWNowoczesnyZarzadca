@@ -8,33 +8,38 @@ image: /img/w3.png
 <div class="container">
 
     <div class="row">
-        <div class="col-12 col-md-9 p-0 wls-bt-r">
-            <div class="p-0 mb-2">
-                <div class="container">
-                    <div class="row">
-                        {% for post in site.posts limit: 5 %}
-                        <div class="p-0 pr-md-2 col-12 mt-2">
-                            {% include postcard.html post=post %}
-                        </div>
-                        {% endfor %}
-                    </div>
+        <div class="col-12 col-md-7">
+            <div class="h2 text-center">
+                Aktualne wpisy
+            </div>            
+            <div class="pb-2">
+                {% for post in site.posts limit: 5 %}
+                <div class="mb-2">
+                    {% include postcard.html post=post %}
                 </div>
+                {% endfor %}
             </div>
         </div>
-        <div class="col-12 col-md-3 p-0">
-            <div class="wls-bg p-2 wls-br-r wls-bb-r wls-bt-r text-justify">
-                <h4><img class="wls-ico-5x mr-2 font-weight-bold" src={{ "/img/avatar.png" | relative_url }}>Michał&nbsp;Ziemski</h4>
-                <p class="mx-2">
-                    Jestem prezesem zarządu spółki WELES sp z&nbsp;o.o. sp.&nbsp;k.
-                </p>
-                <p class="mx-2">
+        <div class="col-12 col-md-5">
+            <div class="nz-post mb-2" ]}>
+                <div class="nz-header">
+                    <div cl="nz-post-logo">
+                        <img src="{{site.data.icons.avatar }}" class="nz-logo-2lg" />
+                    </div>
+                    <div class="nz-title">
+                        <div class="nz-title-text">Michał&nbsp;Ziemski</div>
+                        <div class="nz-title-extra">Jestem prezesem zarządu spółki WELES sp z&nbsp;o.o. sp.&nbsp;k.
+                        </div>
+                    </div>
+                </div>
+                <div class="nz-body">
                     Od ponad 20 lat zajmuję się tworzeniem systemów
                     dla zarządców nieruchomości Weles.
-                </p>
+                </div>
             </div>
 
-            <div class="wls-bg p-2 wls-bl-r">
-                <div class="wls-quote text-justify">
+            <div class="wls-bg p-2">
+                <div class="nz-quote">
                     Spotkałem wielu zarządców nieruchomości. Z&nbsp;wieloma współpracuję przez bardzo długi okres.
                     Na tym portalu pragnę podzielić się moimi doświadczeniami, co sprawiało, że niektórzy
                     zarządcy szybko rosną, inni stoją w miejscu a&nbsp;jeszcze inni powoli zmierzają do

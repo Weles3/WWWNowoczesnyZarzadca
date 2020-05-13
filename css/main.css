@@ -1,0 +1,132 @@
+:root {
+    --wls-base-dark: rgb(10, 69,79);
+    --wls-base-light: rgb(7, 117, 135);
+    --wls-gray-dark: gray;
+    --wls-gray-light: lightgray;
+    --wls-logo-light: rgb(218, 74, 0);
+    --wls-logo-dark: rgb(186, 0, 0);
+    --wls-hint: rgb(240,240,240);
+    --wls-border-radius: .5em;
+    --wls-padding: .25em;
+
+    --primary: var(--wls-base-dark)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background-color: var(--wls-base-dark);
+}
+
+:link {
+    color: var(--wls-base-dark);
+}
+
+:visited:not(.btn-primary) {
+    color: var(--wls-base-dark);
+}
+
+:link:hover {
+    color: var(--wls-base-light);
+}
+
+#navbar {
+    border-bottom: 1px solid var(--wls-gray-light);
+    box-shadow: 0px 0px 1em 1px var(--wls-gray-light);
+}
+
+#footer {
+    text-align: center;
+}
+
+.nz-logo-2lg {
+    height: 4rem;
+}
+
+.nz-logo-lg {
+    height: 2.5rem;
+}
+
+.nz-logo {
+    height: 1em;
+}
+
+
+.nz-post {
+    display: flex;
+    flex-direction: column;    
+}
+
+.nz-post > .nz-header {
+    display: flex;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    border-bottom: 1px solid var(--wls-gray-dark);
+}
+
+.nz-post > .nz-header > .nz-post-logo {
+    display: flex;
+}
+.nz-post > .nz-header > .nz-post-logo > img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nz-post > .nz-header > .nz-title {
+    padding-left: 1em;
+    flex-grow: 1;
+}
+
+.nz-post > .nz-header > .nz-title > .nz-title-text {
+    font-weight: bold;
+}
+
+.nz-post > .nz-header > .nz-title > .nz-title-extra {
+    color:var(--wls-gray-dark);
+    font-size: small;
+}
+
+.nz-post > .nz-body {
+    font-size: medium;
+    text-align: justify;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.nz-affi {
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+}
+
+
+.nz-affi  > .nz-affi-logo  img {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--wls-base-dark);
+}
+
+.nz-affi > .nz-affi-body {
+    color: var(--wls-gray-dark);
+    font-size: small;
+}
+
+#footer .nz-foot-img {
+    border-top: 1px solid var(--wls-gray-light);
+    padding: 2em;
+}
+
+#footer .nz-foot-img > *:not(:first-child) {
+    margin-left: 1em;
+}
+
+
+.nz-quote {
+    color: var(--wls-gray-dark);
+    font-size: medium;
+    text-align: justify;
+    font-style: italic;
+}
