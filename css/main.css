@@ -21,7 +21,7 @@
     background-color: var(--wls-base-dark);
 }
 
-:link {
+:link:not(.btn-primary) {
     color: var(--wls-base-dark);
 }
 

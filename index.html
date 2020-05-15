@@ -13,7 +13,7 @@ image: /img/w3.png
                 Aktualne wpisy
             </div>            
             <div class="pb-2">
-                {% for post in site.posts limit: 5 %}
+                {% for post in site.posts limit: 10 %}
                 <div class="mb-2">
                     {% include postcard.html post=post %}
                 </div>
