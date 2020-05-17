@@ -130,3 +130,32 @@
     text-align: justify;
     font-style: italic;
 }
+
+.nz-area {
+    background-color: var(--wls-hint);
+    border: 1px solid var(--wls-gray-light);
+    border-radius: .5em;
+    padding: 1em;
+    box-shadow: 2px 2px 6px 1px var(--wls-gray-light);
+}
+
+#body {
+    position: relative;
+}
+#body::after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/stock/tlo.jpg); 
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;    
+}

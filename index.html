@@ -5,49 +5,47 @@ description: Wizja rozwoju zarządców nieruchomości dzięki technologii i leps
 image: /img/w3.png
 ---
 
-<div class="container">
-
-    <div class="row">
-        <div class="col-12 col-md-7">
-            <div class="h2 text-center">
-                Aktualne wpisy
-            </div>            
-            <div class="pb-2">
-                {% for post in site.posts limit: 10 %}
-                <div class="mb-2">
-                    {% include postcard.html post=post %}
+<div class="col-12 col-md-7">
+    <div class="nz-area mb-4">
+        <div class="h2 text-center">
+            Aktualne wpisy
+        </div>
+        <div class="pb-4">
+            {% for post in site.posts limit: 10 %}
+            <div class="mb-4">
+                {% include postcard.html post=post %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-5">
+    <div class="nz-area">
+        <div class="nz-post mb-2" ]}>
+            <div class="nz-header">
+                <div cl="nz-post-logo">
+                    <img src="{{site.data.icons.avatar }}" class="nz-logo-2lg" />
                 </div>
-                {% endfor %}
+                <div class="nz-title">
+                    <div class="nz-title-text">Michał&nbsp;Ziemski</div>
+                    <div class="nz-title-extra">Jestem prezesem zarządu spółki WELES sp z&nbsp;o.o. sp.&nbsp;k.
+                    </div>
+                </div>
+            </div>
+            <div class="nz-body">
+                Od ponad 20 lat zajmuję się tworzeniem systemów
+                dla zarządców nieruchomości Weles.
             </div>
         </div>
-        <div class="col-12 col-md-5">
-            <div class="nz-post mb-2" ]}>
-                <div class="nz-header">
-                    <div cl="nz-post-logo">
-                        <img src="{{site.data.icons.avatar }}" class="nz-logo-2lg" />
-                    </div>
-                    <div class="nz-title">
-                        <div class="nz-title-text">Michał&nbsp;Ziemski</div>
-                        <div class="nz-title-extra">Jestem prezesem zarządu spółki WELES sp z&nbsp;o.o. sp.&nbsp;k.
-                        </div>
-                    </div>
-                </div>
-                <div class="nz-body">
-                    Od ponad 20 lat zajmuję się tworzeniem systemów
-                    dla zarządców nieruchomości Weles.
-                </div>
-            </div>
 
-            <div class="wls-bg p-2">
-                <div class="nz-quote">
-                    Spotkałem wielu zarządców nieruchomości. Z&nbsp;wieloma współpracuję przez bardzo długi okres.
-                    Na tym portalu pragnę podzielić się moimi doświadczeniami, co sprawiało, że niektórzy
-                    zarządcy szybko rosną, inni stoją w miejscu a&nbsp;jeszcze inni powoli zmierzają do
-                    końca swojej działalności. Podpowiem też, co robić aby znaleźć się w&nbsp;pierwszej z&nbsp;tych
-                    grup.
-                </div>
+        <div class="wls-bg p-2">
+            <div class="nz-quote">
+                Spotkałem wielu zarządców nieruchomości. Z&nbsp;wieloma współpracuję przez bardzo długi okres.
+                Na tym portalu pragnę podzielić się moimi doświadczeniami, co sprawiało, że niektórzy
+                zarządcy szybko rosną, inni stoją w miejscu a&nbsp;jeszcze inni powoli zmierzają do
+                końca swojej działalności. Podpowiem też, co robić aby znaleźć się w&nbsp;pierwszej z&nbsp;tych
+                grup.
             </div>
-
         </div>
     </div>
 

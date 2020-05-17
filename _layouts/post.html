@@ -1,34 +1,27 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="d-none d-md-block col-md-auto">
+    <div class="bg-white mb-2">
+        {% include postnav.html %}
+    </div>
 
-    <div class="row">
+    <div class="bg-white mb-2">
+        {% include toc.html html=content id="toc" item_class="wls-toc" %}
+    </div>
 
-        <div class="d-none d-md-block col-md-auto">
-            <div class="bg-white mb-2">
-                {% include postnav.html %}
-            </div>
+</div>
 
-            <div class="bg-white mb-2">                
-                {% include toc.html html=content id="toc" item_class="wls-toc" %}
-            </div>
+<div class="col-12 col-md">
+    <div class="bg-white px-2 wls-subtitle small mx-md-2 wls-bt-r">Opublikowano {{ page.date | date: "%Y-%m-%d" }}.
+        Przeczytasz w ok. {{ page.readTime }} min.</div>
+    <div class="bg-white p-2 mx-md-2" id="postContent">
+        {{ content }}
+    </div>
+</div>
 
-        </div>
-
-        <div class="col-12 col-md">
-            <div class="bg-white px-2 wls-subtitle small mx-md-2 wls-bt-r">Opublikowano {{ page.date | date: "%Y-%m-%d" }}. Przeczytasz w ok. {{ page.readTime }} min.</div>
-            <div class="bg-white p-2 mx-md-2" id="postContent">
-                {{ content }}
-            </div>
-        </div>
-
-        <div class="col-12 d-md-none">
-            <div class="bg-white mt-2">
-                {% include postnav.html %}
-            </div>
-        </div>
-
-
+<div class="col-12 d-md-none">
+    <div class="bg-white mt-2">
+        {% include postnav.html %}
     </div>
 </div>
