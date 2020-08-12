@@ -3,7 +3,7 @@ layout: post
 title: Dostęp on-line dla właścicieli
 description: Poprawia komunikację i odciąża zarządcę
 icon: /svg/nznt.svg
-tags: [w3]
+tags: [nz, w3]
 readTime: 10
 ---
 # Dlaczego dostęp on-line?

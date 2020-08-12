@@ -9,7 +9,9 @@
             "name": "{{ post.title | escape}}",
             "date": "{{ post.date | date: "%Y-%m-%d" }}",
             "image": "{{ post.image }}",
+            "icon": "{{ post.icon }}",
             "url": "{{ post.url  }}",
+            "group": "{{ post.tags[0] }}",
             "desc": "{{ post.description | escape }}",
             "readTime": {{ post.readTime }}
         }
