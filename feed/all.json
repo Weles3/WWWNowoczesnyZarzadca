@@ -1,0 +1,5 @@
+---
+tag: w3
+---
+{% assign latest=site.posts %}
+{% include feed.json list=latest limit=5 %}

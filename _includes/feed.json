@@ -1,6 +1,6 @@
 [
     {%- assign start=true -%}
-    {%- for post in include.list | limit: 3 -%}
+    {%- for post in include.list | limit: include.limit -%}
         {%- if start -%}
             {%- assign start=false -%}
             {%- else -%},
