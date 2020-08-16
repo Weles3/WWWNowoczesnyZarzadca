@@ -30,43 +30,60 @@
     {% seo %}
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-white mb-2" id="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="{{ site.data.icons.nz }}" class="nz-logo-lg">
-        </a>
+<body class="d-flex flex-column">
+    <div id="cookieconsent" class="p-2 d-none">
+        <div class="text-muted small p-2">
+            Nasza witryna logowania może przechować niewielką ilość danych w Państwa przeglądarce aby polepszyć komfort
+            użytkowania. Dzięki temu będziemy mogli zmniejszać ilość danych które trzeba podać przy logowaniach oraz
+            pozyskiwać informację na temat wykorzystania strony, celem jej dalszego ulepszania. Dalsze korzystanie z
+            witryny oznacza zgodę na te działania.
+        </div>
+        <button id="cookieconsent_ok" class="btn btn-block btn-primary p-2">OK</button>
+    </div>
+    <script src="{{ site.baseurl }}/js/cookie.js"></script>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4" id="navbar">
+        <a class="navbar-brand mr-0" href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}{{ site.data.icons.nz }}" class="nz-logo-lg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <span class="navbar-nav ml-auto">
-                {% for n in site.data.nav %}
-                <a {% if n.extern %}target="_blank" {% endif %}class="nav-link" href="{{ n.href }}">{{ n.text }}</a>
-                {% endfor %}
-            </span>
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://weles3.pl" target="_blank">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.w3u }}" class="d-none d-lg-inline nz-logo-lg">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.w3 }}" class="d-inline d-lg-none nz-logo-md">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://wspolnotyksiegowosc.pl" target="_blank">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.wku }}" class="d-none d-lg-inline nz-logo-lg">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.wk }}" class="d-inline d-lg-none nz-logo-md">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://tomojdom.pl" target="_blank">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.tmdu }}" class="d-none d-lg-inline nz-logo-lg">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.tmd }}" class="d-inline d-lg-none nz-logo-md">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://znajdzzarzadce.pl" target="_blank">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.zzu }}" class="d-none d-lg-inline nz-logo-lg">
+                        <img src="{{ site.baseurl }}{{ site.data.icons.zz }}" class="d-inline d-lg-none nz-logo-md">
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-
-    <div id="body" class="container">
+    <div id="body" class="container flex-grow-1">
         <div class="row">
             {{ content }}
         </div>
-        <div id="footer" class="row mt-4">
-            <div class="col-12">
-                <div class="nz-foot-img">
-                    <a target="_blank" href="https://www.e-adm.pl"><img src="{{ site.data.icons.w3ntm }}" class="nz-logo-lg"></a>
-                    <a target="_blank" href="https://tomojdom.pl"><img src="{{ site.data.icons.tmdntm }}" class="nz-logo-lg"></a>
-                    <a target="_blank" href="https://ksiegi.e-adm.pl"><img src="{{ site.data.icons.wkntm }}" class="nz-logo-lg"></a>
-                    <a target="_blank" href="https://znajdzzarzadce.pl"><img src="{{ site.data.icons.zzntm }}" class="nz-logo-lg"></a>
-                    <a target="_blank" href="https://nowoczesnyzarzadca.pl"><img src="{{ site.data.icons.nzntm }}" class="nz-logo-lg"></a>
-                </div>
-            </div>
-        </div>
     </div>
-
 </body>
 
 </html>

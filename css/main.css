@@ -12,6 +12,10 @@
     --primary: var(--wls-base-dark)
 }
 
+html,body {
+    min-height: 100vh;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -48,6 +52,10 @@
 
 .nz-logo-lg {
     height: 2.5rem;
+}
+
+.nz-logo-md {
+    height: 2rem;
 }
 
 .nz-logo {
@@ -147,7 +155,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/stock/tlo.jpg); 
+    background-image: url(/img/tlo.jpg); 
     background-position-x: right;
     background-position-y: bottom;
     background-size: contain;
