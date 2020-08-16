@@ -1,9 +1,13 @@
-<a href="/" class="btn btn-block btn-primary">&uarr; Strona główna</a>
-
+<div>
+    <a href="/">Strona główna <i class="fad fa-angle-double-up"></i></a>
+</div>
 {% if page.previous %}
-<a href="{{ page.previous.url }}" class="btn btn-block btn-primary">&larr; Poprzedni</a>                    
+<div>
+    <a href="{{ page.previous.url }}">Poprzedni <i class="fad fa-angle-double-left"></i></a>
+</div>
 {% endif %}
-
 {% if page.next %}
-<a href="{{ page.next.url }}" class="btn btn-block btn-primary">&rarr; Następny</a>                    
+<div>
+    <a href="{{ page.next.url }}">Następny <i class="fad fa-angle-double-right"></i></a>
+</div>
 {% endif %}

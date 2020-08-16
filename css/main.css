@@ -166,3 +166,7 @@ html,body {
     opacity : 0.4;
     z-index: -1;    
 }
+
+#toc {
+    margin-bottom: 0px;
+}

@@ -1,18 +1,7 @@
 ---
 layout: default
 ---
-<div class="d-none d-md-block col-md-auto">
-    <div class="bg-white mb-2">
-        {% include postnav.html %}
-    </div>
-
-    <div class="bg-white mb-2">
-        {% include toc.html html=content id="toc" item_class="wls-toc" %}
-    </div>
-
-</div>
-
-<div class="col-12 col-md">
+<div class="col-12 col-md-8">
     <div class="bg-white px-2 wls-subtitle small mx-md-2 wls-bt-r">Opublikowano {{ page.date | date: "%Y-%m-%d" }}.
         Przeczytasz w ok. {{ page.readTime }} min.</div>
     <div class="bg-white p-2 mx-md-2" id="postContent">
@@ -20,8 +9,14 @@ layout: default
     </div>
 </div>
 
-<div class="col-12 d-md-none">
-    <div class="bg-white mt-2">
+<div class="col-12 col-md-4">
+    <div class="mb-4 nz-area">
         {% include postnav.html %}
     </div>
+
+    <div class="mb-4 nz-area d-none d-md-block">
+        {% include toc.html html=content id="toc" item_class="wls-toc" %}
+    </div>
+
 </div>
+
