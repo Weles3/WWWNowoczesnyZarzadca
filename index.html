@@ -10,12 +10,25 @@ image: /img/w3.png
         <div class="h2 text-center">
             Aktualne wpisy
         </div>
-        <div class="pb-4">
-            {% for post in site.posts limit: 10 %}
+        <div>
+            {% for post in paginator.posts limit: 10 %}
             <div class="mb-4">
                 {% include postcard.html post=post %}
             </div>
             {% endfor %}
+        </div>
+        <div class="d-flex flex-row">
+            <div class="text-left flex-grow-1">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}"><i class="fad fa-angle-double-left"></i> Nowsze</a>
+                {% endif %}
+            </div>
+            <div>{{ paginator.page }} / {{ paginator.total_pages }}</div>
+            <div class="text-right flex-grow-1">
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}">Starsze <i class="fad fa-angle-double-right"></i></a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
@@ -24,7 +37,7 @@ image: /img/w3.png
         <div class="nz-post mb-2" ]}>
             <div class="nz-header">
                 <div cl="nz-post-logo">
-                    <img src="{{site.data.icons.avatar }}" class="nz-logo-2lg" />
+                    <img src="{{ site.data.icons.avatar }}" class="nz-logo-2lg" />
                 </div>
                 <div class="nz-title">
                     <div class="nz-title-text">Michał&nbsp;Ziemski</div>
