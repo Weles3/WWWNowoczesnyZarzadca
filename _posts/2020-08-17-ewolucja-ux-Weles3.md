@@ -35,12 +35,12 @@ na stronie logowania była właściwa dla danego użytkownika
 # Nowy design
 
 Zaczęliśmy od opracowania nowych logotypów:
-<div class="d-flex flex-row mb-4">
-    <img class="flex-grow-1 nz-logo-lg" src="{{ site.data.icons.w3u }}">
-    <img class="flex-grow-1 nz-logo-lg" src="{{ site.data.icons.tmdu }}">
-    <img class="flex-grow-1 nz-logo-lg" src="{{ site.data.icons.wku }}">
-    <img class="flex-grow-1 nz-logo-lg" src="{{ site.data.icons.zzu }}">
-    <img class="flex-grow-1 nz-logo-lg" src="{{ site.data.icons.nzu }}">
+<div class="d-flex flex-row mb-2 flex-wrap">
+    <img class="flex-grow-1 nz-logo-lg mb-2" src="{{ site.data.icons.w3u }}">
+    <img class="flex-grow-1 nz-logo-lg mb-2" src="{{ site.data.icons.tmdu }}">
+    <img class="flex-grow-1 nz-logo-lg mb-2" src="{{ site.data.icons.wku }}">
+    <img class="flex-grow-1 nz-logo-lg mb-2" src="{{ site.data.icons.zzu }}">
+    <img class="flex-grow-1 nz-logo-lg mb-2" src="{{ site.data.icons.nzu }}">
 </div>
 
 Oraz nowej, podstawowej palety kolorystycznej
