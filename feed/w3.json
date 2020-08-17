@@ -2,4 +2,4 @@
 tag: w3
 ---
 {% assign latest=site.tags[page.tag] %}
-{% include feed.json list=latest limit=3 %}
+{% include feed.json list=latest limit=5 %}

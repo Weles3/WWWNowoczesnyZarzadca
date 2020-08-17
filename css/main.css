@@ -48,18 +48,22 @@ html,body {
 
 .nz-logo-2lg {
     height: 4rem;
+    color: var(--wls-base-dark);
 }
 
 .nz-logo-lg {
     height: 2.5rem;
+    color: var(--wls-base-dark);
 }
 
 .nz-logo-md {
     height: 2rem;
+    color: var(--wls-base-dark);
 }
 
 .nz-logo {
     height: 1em;
+    color: var(--wls-base-dark);
 }
 
 
