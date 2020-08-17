@@ -3,7 +3,7 @@ layout: post
 title: Nowa strona Weles3
 description: Zapraszamy na Weles3.pl
 icon: /svg/w3nt.svg
-tags: [w3]
+tags: [w3, tmd]
 readTime: 2
 ---
 

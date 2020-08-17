@@ -3,7 +3,7 @@ layout: post
 title: Weles3 w Mieszkanie i Wspólnota
 description: Artykuł o naszym systemie w Mieszkanie i Wspólnota
 icon: /svg/w3nt.svg
-tags: [w3]
+tags: [w3, tmd]
 readTime: 2
 ---
 
