@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Weles członkiem PSZN w Warszawie
-description: Przysąpiliśmy do PSZN w Warszawie. Mamy zamiar realizować wspólnie projekty związane z profesjonalizacją rynku zarządzania nieruchomościami
+description: Przystąpiliśmy do PSZN w Warszawie. Mamy zamiar realizować wspólnie projekty związane z profesjonalizacją rynku zarządzania nieruchomościami
 icon: /svg/w3nt.svg
 tags: [w3]
 readTime: 2
