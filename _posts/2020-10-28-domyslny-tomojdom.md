@@ -2,7 +2,7 @@
 layout: post
 title: ToMojDom.pl domyślną stroną logowania
 description: Strona ToMojDom.pl będzie pokazywana na wydruku danych do logowania i z jej adresu będą przychodziły maile do odzyskania hasła.
-icon: /svg/w3tmd.svg
+icon: /svg/tmdnt.svg
 tags: [tmd, w3]
 readTime: 2
 ---
