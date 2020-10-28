@@ -24,7 +24,7 @@ Zarządcy mają możliwość prezentacji swoich logotypów i danych na stronie l
 
 Za pomocą tego panelu jest możliwe także prezentowanie komunikatów, które będą dostępne dla właścicieli jeszcze przed zalogowaniem się.
 
-# Mail z odzyskiwanie hasła
+# Mail z odzyskiwaniem hasła
 
 W przypadku procedury odzyskiwania dostępu przez właściciela za pomocą
 maila, poczta będzie dochodziła teraz z nowego adresu kod@tomojdom.pl. 
