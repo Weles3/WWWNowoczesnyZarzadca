@@ -26,6 +26,8 @@ nie jest możliwe, przyjmuje się ryczałt 4 m3/os.
 **Uchwały dotyczą sposobu rozliczania się nieruchomości z miastem, nie
 wskazują natomiast sposobu rozliczania się nieruchomości z właścicielami lokali**
 
+Dużo informacji można uzyskać na [stronie m. st. Warszawy dot. gospodarki odpadami](https://warszawa19115.pl/wszystko-o-odpadach#).
+
 # Sposoby rozliczenia się z właścicielami lokali
 
 Sposób rozliczenia tej opłaty na poszczególnych właścicieli lokali zależy
