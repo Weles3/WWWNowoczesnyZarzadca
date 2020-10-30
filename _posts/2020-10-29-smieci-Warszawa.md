@@ -62,6 +62,31 @@ Trudnością w tym schemacie będzie pokazanie mieszkańcom opłaty, którą nie
 Trzeba albo będzie się wytłumaczyć z innej stawki lcznikowej przy rozliczeniu lub rozbić
 rozliczenie na osobno rozliczenie liczników i kosztów.
 
+# Procedura przygotowania naliczeń w systemie Weles3
+Jeżeli stawki za m2/m3 śmieci nie istnieją jeszcze w systemie należy je dodać
+z menu ```Elementy/Nazwy``` stawek w zakładce ```Zasoby```. Podane poniżej algorytmy
+można wpisać w menu ```Zasoby/Edytuj algorytmy``` w zakładce ```Administracja``` przyjmując
+rozszerzony sposób wprowadzania algorytmów. Wartości stawek można podać w menu ```Zasoby/Edytuj stawki``` w zakładce ```Administracja```.
+
+## Naliczenie wg zużycia wody
+
+### Część ryczałtowa algorytmu
+Będzie się ona naliczana dla lokali bez liczników oraz ew. z licznikami jeśli nie mają prognozy. Zamiast ```<licz.os>```, ```<n.śmieci>```, ```<ilość.m3>```, ```<smieci.m3>``` należy podstawić odpowiedni numer danej/stawki
+
+ - Gdy opłata będzie wg liczby osób: ```D<licz.os>*S<n.śmieci>*S<smieci.m3>```
+ - Gdy prognoza będzie zapisana w danej: ```<ilość.m3>*S<smieci.m3>```
+ - Oba warianty łączne: ```GDY D<ilość.m3> > 0 <ilość.m3>*S<smieci.m3> INACZEJ D<licz.os>*S<n.śmieci>*S<smieci.m3> KGDY```
+
+### Część licznikowa algorytmu
+Będzie ona naliczana dla lokali które mają licznik z prognozą
+```(ZW+CW-ZWO)*S<smieci.m3.rozl>```. Jeżeli będziemy rozliczać
+śmieci po stawce wynikowej i mamy na budynku lokale bez liczników,
+to numer ```<smieci.m3.rozl>``` powinien być inny niż ```<smieci.m3>```.
+W pozostałych przypadkach może to być ta sama stawka.
+
+## Naliczenie wg powierzchni/udziału
+Stosujemy algorytm ```D<pow>*S<śmieci.m2>```. Zamiast ```<pow>```, ```<śmieci.m2>```, należy podstawić odpowiedni numer danej/stawki.
+
 # Pomoc przy wprowadzeniu nowych algorytmów
 
 Zachęcamy do kontaktu z naszym wsparciem w tym temacie. Chętnie podpowiemy,
