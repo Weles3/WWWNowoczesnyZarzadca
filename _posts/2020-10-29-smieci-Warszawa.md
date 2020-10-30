@@ -74,8 +74,8 @@ rozszerzony sposób wprowadzania algorytmów. Wartości stawek można podać w m
 Będzie się ona naliczana dla lokali bez liczników oraz ew. z licznikami jeśli nie mają prognozy. Zamiast ```<licz.os>```, ```<n.śmieci>```, ```<ilość.m3>```, ```<smieci.m3>``` należy podstawić odpowiedni numer danej/stawki
 
  - Gdy opłata będzie wg liczby osób: ```D<licz.os>*S<n.śmieci>*S<smieci.m3>```
- - Gdy prognoza będzie zapisana w danej: ```<ilość.m3>*S<smieci.m3>```
- - Oba warianty łączne: ```GDY D<ilość.m3> > 0 <ilość.m3>*S<smieci.m3> INACZEJ D<licz.os>*S<n.śmieci>*S<smieci.m3> KGDY```
+ - Gdy prognoza będzie zapisana w danej: ```D<ilość.m3>*S<smieci.m3>```
+ - Oba warianty łączne: ```GDY D<ilość.m3> > 0 D<ilość.m3>*S<smieci.m3> INACZEJ D<licz.os>*S<n.śmieci>*S<smieci.m3> KGDY```
 
 ### Część licznikowa algorytmu
 Będzie ona naliczana dla lokali które mają licznik z prognozą
