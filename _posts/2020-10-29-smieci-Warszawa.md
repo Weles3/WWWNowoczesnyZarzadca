@@ -79,7 +79,7 @@ Będzie się ona naliczana dla lokali bez liczników oraz ew. z licznikami jeśl
 
 ### Część licznikowa algorytmu
 Będzie ona naliczana dla lokali które mają licznik z prognozą
-```(ZW+CW-ZWO)*S<smieci.m3.rozl>```. Jeżeli będziemy rozliczać
+```(ZW+CW-ZWO)*S<smieci.m3.rozl>```. Jeżeli w systemie nie ma zdefiniowanych typów ```CW``` lub ```ZWO``` wystarczy je pominąć w tym algorytmie. Jeżeli będziemy rozliczać
 śmieci po stawce wynikowej i mamy na budynku lokale bez liczników,
 to numer ```<smieci.m3.rozl>``` powinien być inny niż ```<smieci.m3>```.
 W pozostałych przypadkach może to być ta sama stawka.
