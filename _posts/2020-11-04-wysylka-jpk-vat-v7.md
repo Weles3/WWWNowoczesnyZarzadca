@@ -7,7 +7,7 @@ tags: [w3]
 readTime: 2
 ---
 
-# Wyłączenie starej bramce JPK
+# Wyłączenie starej bramki JPK
 
 W dniu 2020-10-01 weszły w życie nowe [zasady składania dokumentów JPK](https://www.podatki.gov.pl/komunikaty-techniczne/wylaczenie-dotychczasowego-srodowiska-do-przesylania-danych-jpk/).
 
