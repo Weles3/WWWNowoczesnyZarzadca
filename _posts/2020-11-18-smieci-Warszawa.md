@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nowy sposób obciążeń za śmieci w Warszawie od 2020-12-01
+title: Nowy sposób obciążeń za śmieci w Warszawie od 2020-12-01 [aktualizacja]
 description: Od grudnia śmieci w Warszawie będą naliczane na podstawie zużytej wody
 icon: /svg/w3nt.svg
 tags: [w3, tmd]
@@ -54,13 +54,17 @@ właściciela a jego udziałem w generowaniu kosztu, to należy przyjąć schema
 wg zużycia wody w lokalu. W tym przypadku system naliczeń będzie metodologicznie
 równoważny podgrzaniu wody.
 
-W tym schemacie robimy naliczenia miesięczne wg ryczałtów/prognoz liczników a następnie
-wykonujemy rozliczenie liczników po stawce wynikowej lub rozliczenie liczników po
-stawce miejskiej (12,73 zł/m3) połączone z rozliczeniem kosztów.
+W tym schemacie powinno się wprowadzić wyliczone z systemu średnie zużycia
+jako dane w poszczególnych lokalach lub skorzystać z prognoz liczników jeżeli
+są one wyliczane na podstawie zużyć.
 
-Trudnością w tym schemacie będzie pokazanie mieszkańcom opłaty, którą nieruchomość poniosła w związku z różnicą wskaznań między lcznikiem głównym a licznikami w lokalach.
-Trzeba albo będzie się wytłumaczyć z innej stawki lcznikowej przy rozliczeniu lub rozbić
-rozliczenie na osobno rozliczenie liczników i kosztów.
+__W tym schemacie nie ma konieczności rozliczania liczników__. Wyliczone średnie
+zużycia odpowiadają zużyciom w poprzednich okresach i stanowią właściwą podstawę proporcji.
+Rozliczenie różnic między licznikiem głównym a licznikami indywidualnymi
+będzie można wykonać za pomocą mechanizmu rozliczenia kosztów.
+
+__Jeżeli chcemy rozliczać w tym schemacie liczniki należy pamiętać, że takie rozliczenie przeniesie
+proporcję rodziału do zużyć bieżącego okresu, czyli innego niż będący podstawą naliczenia na śmieci__.
 
 # Procedura przygotowania naliczeń w systemie Weles3
 Jeżeli stawki za m2/m3 śmieci nie istnieją jeszcze w systemie należy je dodać
@@ -68,6 +72,8 @@ z menu ```Elementy/Nazwy``` stawek w zakładce ```Zasoby```. Podane poniżej alg
 można wpisać w menu ```Zasoby/Edytuj algorytmy``` w zakładce ```Administracja``` przyjmując
 rozszerzony sposób wprowadzania algorytmów. Wartości stawek można podać w menu ```Zasoby/Edytuj stawki``` w zakładce ```Administracja```.
 
+W Welesie dodaliśmy nowy wydruk ```Średnie zużycia liczników``` który pozwala wyeksportować dane dot średnich zużyc,
+któe mogą posłużyć za postawę naliczeń.
 ## Naliczenie wg zużycia wody
 
 ### Część ryczałtowa algorytmu
@@ -79,10 +85,11 @@ Będzie się ona naliczana dla lokali bez liczników oraz ew. z licznikami jeśl
 
 ### Część licznikowa algorytmu
 Będzie ona naliczana dla lokali które mają licznik z prognozą
-```(ZW+CW-ZWO)*S<smieci.m3.rozl>```. Jeżeli w systemie nie ma zdefiniowanych typów ```CW``` lub ```ZWO``` wystarczy je pominąć w tym algorytmie. Jeżeli będziemy rozliczać
-śmieci po stawce wynikowej i mamy na budynku lokale bez liczników,
+```GDY TYP < 4 (ZW+CW-ZWO)*S<smieci.m3.rozl> KGDY```. Jeżeli w systemie nie ma zdefiniowanych typów ```CW``` lub ```ZWO``` wystarczy je pominąć w tym algorytmie. Jeżeli będziemy rozliczać
+śmieci rozliczeniem liczników (odradzamy) po stawce wynikowej i mamy na budynku lokale bez liczników,
 to numer ```<smieci.m3.rozl>``` powinien być inny niż ```<smieci.m3>```.
 W pozostałych przypadkach może to być ta sama stawka.
+Część licznikową trzeba wprowadzić jako algorytm rozszerzony. Zapis ```GDY TYP < 4 ... KGDY``` oznacza aby nie robić rozliczeń liczników.
 
 ## Naliczenie wg powierzchni/udziału
 Stosujemy algorytm ```D<pow>*S<śmieci.m2>```. Zamiast ```<pow>```, ```<śmieci.m2>```, należy podstawić odpowiedni numer danej/stawki.
