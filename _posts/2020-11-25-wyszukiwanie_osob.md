@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wyszukiwanie właścicieli w wielu wspólnotach
-description: Nowa funkcja w menu Zasoby/Wyszukiwanie Osób w zakładce Zasoby pozwoli łatwo znaleść właściceli
+description: Nowa funkcja w menu Zasoby/Wyszukiwanie Osób w zakładce Zasoby pozwoli łatwo znaleźć właściceli
 icon: /svg/w3nt.svg
 tags: [w3]
 readTime: 5
