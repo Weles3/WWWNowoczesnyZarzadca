@@ -174,3 +174,7 @@ html,body {
 #toc {
     margin-bottom: 0px;
 }
+
+#postContent img {
+    width: 100%;
+}
