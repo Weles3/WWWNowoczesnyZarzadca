@@ -3,7 +3,7 @@ layout: post
 title: Zebrania/dyżury online dla nieruchomości
 description: Dodaliśmy możliwość wprowadzania informacji o nadchodzących zebraniach/dyżurach.
 icon: /svg/tmdnt.svg
-tags: [tmd]
+tags: [tmd, w3]
 readTime: 2
 ---
 
