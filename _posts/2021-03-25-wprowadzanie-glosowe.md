@@ -2,7 +2,7 @@
 layout: post
 title: Wprowadzanie głosowe
 description: Dodaliśmy możliwość dyktowania przy wprowadzaniu pól tekstowych
-icon: /svg/tmdnt.svg
+icon: /svg/w3nt.svg
 tags: [w3]
 readTime: 2
 ---
